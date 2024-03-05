@@ -8,4 +8,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
   get "/all_homes", controller: "homes", action: "all_homes"
+  get "/homes", controller: "homes", action: "index"
+  get "/homes/:id", controller: "homes", action: "show"
+  post "/homes" => "homes#create"
+  patch "/homes/:id" => "homes#update"
+  delete "/homes/:id" => "homes#destroy"
 end
