@@ -1,5 +1,4 @@
-json.extract! home, :id, :created_at, :updated_at
-json.url home_url(home, format: :json)
+json.id home.id 
 json.description home.description
 json.year_built home.year_built
 json.square_feet home.year_built
